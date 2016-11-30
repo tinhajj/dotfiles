@@ -11,6 +11,6 @@ cd ~
 git clone --recursive https://github.com/tinhajj/dotfiles.git
 cd dotfiles && mv .git git && mv .gitmodules gitmodules
 cd ~
-ln -s ./dotfiles/* ./
+ln -s ./dotfiles/.* ./
 mv git .git && mv gitmodules .gitmodules
 ```
