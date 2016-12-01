@@ -9,8 +9,8 @@ go back into dotfiles and rename folders again `mv git .git && mv gitmodules .gi
 ```
 cd ~
 git clone --recursive https://github.com/tinhajj/dotfiles.git
-cd dotfiles && mv .git git && mv .gitmodules gitmodules
+cd dotfiles && mv .git git && mv .gitmodules gitmodules && mv .gitignore gitignore
 cd ~
 ln -s ./dotfiles/.* ./
-mv git .git && mv gitmodules .gitmodules
+mv git .git && mv gitmodules .gitmodules && mv .gitignore gitignore
 ```
