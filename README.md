@@ -12,5 +12,5 @@ git clone --recursive https://github.com/tinhajj/dotfiles.git
 cd dotfiles && mv .git git && mv .gitmodules gitmodules && mv .gitignore gitignore
 cd ~
 ln -s ./dotfiles/.* ./
-mv git .git && mv gitmodules .gitmodules && mv .gitignore gitignore
+mv git .git && mv gitmodules .gitmodules && mv gitignore .gitignore
 ```
