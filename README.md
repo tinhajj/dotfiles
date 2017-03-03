@@ -6,7 +6,8 @@ to update submodules `git submodule update --init --recursive`
 
 symlink all dot files and dot folders
 
-go back into dotfiles and rename folders again `mv git .git && mv gitmodules .gitmodules`
+move all files under temp into dotfiles and delete temp folder
+
 
 ```
 cd ~
