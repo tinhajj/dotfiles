@@ -2,12 +2,11 @@ git clone repo into ~/ directory with recursive option to get submodules
 
 in dotfiles move .git* files out of directory (.git, .gitmodules, .gitmodules)
 
-to update submodules `git submodule update --init --recursive`
-
 symlink all dot files and dot folders
 
 move all files under temp into dotfiles and delete temp folder
 
+to update submodules `git submodule update --init --recursive`
 
 ```
 cd ~
