@@ -16,6 +16,6 @@ mkdir temp && mv .git* temp/
 cd ~
 ln -s ./dotfiles/.* ./
 cd dotfiles
-mv temp/* ./
+mv temp/.* ./
 rm -rf temp
 ```
