@@ -23,6 +23,9 @@ bindsym $mod+d exec rofi -show run -font "Anonymous Pro 14"
 # lock screen
 bindsym $mod+Shift+x exec i3lock
 
+# hide window bar
+for_window [class="Google-chrome"] border none
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
