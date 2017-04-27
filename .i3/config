@@ -15,7 +15,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+BackSpace kill
 
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run -font "Anonymous Pro 14"
@@ -25,6 +25,7 @@ bindsym $mod+Shift+x exec i3lock
 
 # hide window bar
 for_window [class="Google-chrome"] border none
+for_window [class="Firefox"] border none
 
 # change focus
 bindsym $mod+h focus left
