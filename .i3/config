@@ -14,6 +14,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start a browser
+bindsym $mod+backslash exec google-chrome-stable
+
 # kill focused window
 bindsym $mod+BackSpace kill
 
@@ -23,9 +26,9 @@ bindsym $mod+d exec rofi -show run -font "Anonymous Pro 14"
 # lock screen
 bindsym $mod+Shift+x exec i3lock -c 231f20
 
-# hide window bar
-for_window [class="Google-chrome"] border none
-for_window [class="Firefox"] border none
+# hide title bar
+new_window pixel 1
+new_float pixel 1
 
 # change focus
 bindsym $mod+h focus left
