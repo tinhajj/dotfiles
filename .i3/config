@@ -21,7 +21,7 @@ bindsym $mod+BackSpace kill
 bindsym $mod+d exec rofi -show run -font "Anonymous Pro 14"
 
 # lock screen
-bindsym $mod+Shift+x exec i3lock
+bindsym $mod+Shift+x exec i3lock -c 231f20
 
 # hide window bar
 for_window [class="Google-chrome"] border none
