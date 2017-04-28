@@ -1,6 +1,6 @@
 [options]
-font = FontAwesome 14
-font = Anonymous Pro 14
+font = FontAwesome 12
+font = DejaVu Sans Mono Book 12
 audible_bell = false
 visible_bell = false
 mouse_autohide = false
