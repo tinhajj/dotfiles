@@ -30,6 +30,10 @@ bindsym $mod+Shift+x exec i3lock -c 231f20
 new_window pixel 2
 new_float pixel 2
 
+# scratchpad
+bindsym $mod+m move scratchpad
+bindsym $mod+p scratchpad show
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -45,6 +49,9 @@ bindsym $mod+Shift+l move right
 # split in horizontal orientation
 # TODO this doesn't really work well if you've coming from vim
 #bindsym $mod+h split h
+
+#split toggle
+bindsym $mod+t split toggle
 
 # split in vertical orientation
 bindsym $mod+v split v
