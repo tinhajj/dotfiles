@@ -130,3 +130,7 @@ bar {
 
 exec_always compton -f
 exec_always feh --bg-scale /home/water/pictures/background.jpg
+
+exec termite
+exec google-chrome-stable
+exec termite
