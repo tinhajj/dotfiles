@@ -1,1 +1,3 @@
-exec i3
+slstatus &
+
+exec dwm
