@@ -6,3 +6,4 @@ set number
 let g:go_fmt_command = "goimport"
 map <leader>c :GoErrCheck<cr>
 map <leader>r :GoRun<cr>
+map <leader>b :GoBuild<cr>
