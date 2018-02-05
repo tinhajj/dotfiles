@@ -12,4 +12,7 @@
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "vim-vue"]
+	path = .vim/bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git
