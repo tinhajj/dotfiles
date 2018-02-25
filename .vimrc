@@ -63,6 +63,7 @@ let g:sh_noisk=1
 set modeline
 set modelines=3
 " Turn folding off for real, hopefully
+:set foldopen-=block
 set foldmethod=manual
 set nofoldenable
 " Insert only one space when joining lines that contain sentence-terminating
