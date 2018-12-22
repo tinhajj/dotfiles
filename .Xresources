@@ -5,4 +5,10 @@ Xft.hintstyle: hintfull
 Xft.hinting: 1
 Xft.rgba: rgb
 Xft.antialias: 1
-Xcursor.size: 20
+Xcursor.size: 60
+
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+URxvt.font: xft:SF Mono:size=9
+URxvt.scrollBar: false
