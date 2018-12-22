@@ -1,22 +1,25 @@
 # i3 config file (v4)
 
-set $mod Mod4
+set $mod Mod1
 
 # Gaps
-gaps inner 10
-gaps outer 5
+gaps inner 2
+gaps outer 2
 
 # Fonts
-font pango: SF-Pro-Display-Bold
+font pango:SF Pro Display 10
+
+# Title Bar
+new_window pixel 3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvt
 
 # start dmenu
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id "dmenu_run -fn 'SF Pro Display-10'"
 
 # start a browser
 bindsym $mod+backslash exec google-chrome-stable
@@ -120,4 +123,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+	position top
 }
