@@ -3,20 +3,36 @@
 set $mod Mod1
 
 # Gaps
-gaps inner 2
-gaps outer 2
+gaps inner 3
+gaps outer 3
 
 # Fonts
 font pango:SF Pro Display 10
 
-# Title Bar
-new_window pixel 3
+# Borders
+new_window pixel 1
+
+# Hotkeys
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
+
+# Class                 border  backgr. text    indicator child_border
+client.focused          #2aa198 #268bd2 #073642 #268bd2   #2aa198
+client.focused_inactive #2aa198 #268bd2 #073642 #268bd2   #2aa198
+client.unfocused        #000000 #073642 #839496 #000000   #2aa198
+client.urgent           #000000 #073642 #dc322f #000000   #2aa198
+client.placeholder      #ffffff #073642 #ffffff #000000   #2aa198
+
+client.background       #ffffff
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# alt+tab functionality
+bindsym $mod+Tab workspace back_and_forth
+
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Shift+Return exec urxvt
 
 # start dmenu
 bindsym $mod+p exec --no-startup-id "dmenu_run -fn 'SF Pro Display-10'"
@@ -46,15 +62,12 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# split in horizontal orientation
+# split orientation
 # messes with vim movement so use toggle instead
-#bindsym $mod+h split h
+# bindsym $mod+h split h
+# bindsym $mod+v split v
 
-# split in vertical orientation
-# not using the other one due to vim movement so don't use this either
-#bindsym $mod+v split v
-
-#split toggle
+# split toggle
 bindsym $mod+t split toggle
 
 # enter fullscreen mode for the focused container
@@ -124,4 +137,5 @@ bindsym $mod+r mode "resize"
 
 bar {
 	position top
+	status_command i3status
 }

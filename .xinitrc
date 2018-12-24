@@ -3,4 +3,5 @@ xrdb -merge ~/.Xresources.dark
 
 xmodmap ~/.Xmodmap
 
-exec i3 -V -d all -c ~/.i3/config > ~/i3log 2>&1
+exec i3 -c ~/.i3/config
+#exec wtftw
