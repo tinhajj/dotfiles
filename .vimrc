@@ -1,15 +1,15 @@
 call plug#begin('~/.vim/plugged')
-	Plug 'altercation/vim-colors-solarized'
-	Plug 'ctrlpvim/ctrlp.vim'
-	Plug 'dart-lang/dart-vim-plugin'
-	Plug 'fatih/vim-go'
-	Plug 'natebosch/vim-lsc'
-	Plug 'posva/vim-vue'
-	Plug 'rust-lang/rust.vim'
-	Plug 'tpope/vim-surround'
-	Plug 'tpope/vim-repeat'
-	Plug 'tpope/vim-unimpaired'
-	Plug 'vim-syntastic/syntastic'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'dart-lang/dart-vim-plugin'
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'natebosch/vim-lsc'
+  Plug 'posva/vim-vue'
+  Plug 'rust-lang/rust.vim'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-unimpaired'
+  Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

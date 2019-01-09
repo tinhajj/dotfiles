@@ -12,3 +12,5 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 URxvt.font: xft:SF Mono:size=9
 URxvt.scrollBar: false
+
+URxvt.perl-ext-common: font-size
