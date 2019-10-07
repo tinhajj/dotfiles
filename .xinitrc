@@ -3,5 +3,9 @@ xrdb -merge ~/.Xresources.dark
 
 xmodmap ~/.Xmodmap
 
-exec i3 -c ~/.i3/config
+export _JAVA_AWT_WM_NONREPARENTING=1
+slstatus &
+exec dwm
+
+#exec i3 -c ~/.i3/config
 #exec xmonad
