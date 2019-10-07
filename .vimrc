@@ -1,15 +1,14 @@
 call plug#begin('~/.vim/plugged')
+  Plug 'natebosch/vim-lsc'
+  Plug 'dart-lang/dart-vim-plugin'
   Plug 'altercation/vim-colors-solarized'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'dart-lang/dart-vim-plugin'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-  Plug 'natebosch/vim-lsc'
   Plug 'posva/vim-vue'
   Plug 'rust-lang/rust.vim'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-unimpaired'
-  Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -84,8 +83,8 @@ set autoread
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLOR
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " STATUS LINE
@@ -99,11 +98,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" syntastic
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_mode_map = { 'mode': 'passive' }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " language server
