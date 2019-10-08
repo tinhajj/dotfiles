@@ -7,10 +7,3 @@ Xft.rgba: rgb
 Xft.antialias: 1
 Xcursor.size: 60
 
-URxvt*scrollTtyOutput: false
-URxvt*scrollWithBuffer: true
-URxvt*scrollTtyKeypress: true
-URxvt.font: xft:SF Mono:size=9
-URxvt.scrollBar: false
-
-URxvt.perl-ext-common: font-size

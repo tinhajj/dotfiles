@@ -1,5 +1,4 @@
 xrdb -merge ~/.Xresources
-xrdb -merge ~/.Xresources.dark
 
 xmodmap ~/.Xmodmap
 
